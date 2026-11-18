@@ -125,9 +125,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .text-link{display:inline-flex;align-items:center;gap:17px;margin-top:21px;color:var(--copper-light);font-size:.76rem;font-weight:650;transition:gap .2s ease}
 .text-link:hover{gap:23px}
 .feature-stage{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);align-items:stretch;gap:14px;margin-top:77px}
-.feature-photo{position:relative;min-height:430px;margin:0;overflow:hidden;background:var(--panel)}
+.feature-photo{position:relative;height:clamp(430px,38vw,520px);min-height:430px;margin:0;overflow:hidden;background:var(--panel)}
 .feature-photo::after{position:absolute;inset:40% 0 0;content:"";background:linear-gradient(0deg,rgba(16,26,44,.78),transparent)}
-.feature-photo img{width:100%;height:100%;min-height:430px;object-fit:cover;filter:saturate(.82);transition:transform .8s var(--ease),filter .8s ease}
+.feature-photo img{width:100%;height:100%;min-height:0;object-fit:cover;filter:saturate(.82);transition:transform .8s var(--ease),filter .8s ease}
 .feature-photo:hover img{transform:scale(1.035);filter:saturate(1)}
 .photo-caption{position:absolute;z-index:1;right:24px;bottom:20px;left:24px;display:flex;justify-content:space-between;color:#e9edf4;font-size:.57rem;letter-spacing:.17em}
 .photo-caption span:last-child{color:#c4d0df}
@@ -264,7 +264,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 .floating-contact{position:fixed;right:24px;bottom:23px;z-index:25;display:flex;align-items:center;gap:10px;padding:12px 15px;border:1px solid rgba(244,197,69,.38);border-radius:3px;background:rgba(13,20,24,.91);backdrop-filter:blur(12px);box-shadow:0 12px 34px rgba(0,0,0,.28);font-size:.7rem;transition:transform .25s var(--ease),border-color .25s ease,background .25s ease}
 .floating-contact:hover{transform:translateY(-3px);border-color:var(--copper-light);background:#121d22}
-.floating-pulse{width:6px;height:6px;border-radius:50%;background:#f4c545;box-shadow:0 0 0 4px #rgba-invalid(.1),0 0 12px #rgba-invalid(.75)}
+.floating-pulse{width:6px;height:6px;border-radius:50%;background:#f4c545;box-shadow:0 0 0 4px rgba(244,197,69,.1),0 0 12px rgba(244,197,69,.75)}
 .floating-label{color:#dce3e0}
 .floating-arrow{color:var(--copper-light);font-size:1rem}
 
@@ -330,7 +330,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   .manifesto h2,.services h2,.method h2,.contact h2,.faq h2{font-size:clamp(2.7rem,10vw,4.25rem)}
   .manifesto-aside{max-width:540px}
   .feature-stage{grid-template-columns:1fr;gap:10px;margin-top:47px}
-  .feature-photo,.feature-photo img{min-height:330px;max-height:430px}
+  .feature-photo{height:clamp(330px,100vw,430px);min-height:330px;max-height:none}
+  .feature-photo img{height:100%;min-height:0;max-height:none}
   .feature-note{min-height:340px}
   .note-quote{margin-top:38px}
   .services{padding-top:18px;padding-bottom:100px}
