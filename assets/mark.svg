@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Bobinados Alf</title>
+  <rect x="3" y="3" width="94" height="94" rx="23" fill="#101a2c"/>
+  <rect x="8" y="8" width="84" height="84" rx="19" fill="none" stroke="#1b58a4" stroke-width="3"/>
+  <path d="M22 42h8l5-12h30l5 12h8v30H22z" fill="none" stroke="#f4c545" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="50" cy="57" r="11" fill="none" stroke="#fff" stroke-width="3.5"/>
+  <circle cx="50" cy="57" r="4" fill="#e34b45"/>
+  <path d="M50 35v-5M34 47l-5-3M66 47l5-3M34 67l-5 3M66 67l5 3" fill="none" stroke="#f4c545" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M75 23v7h-7" fill="none" stroke="#e34b45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
